@@ -1,0 +1,255 @@
+/* 全局属性 */
+
+#nice {
+  font-family: "PingFangSC-Light", "Microsoft YaHei", sans-serif;
+}
+
+#nice #frontmatter-left {
+  display: inline-block;
+  width: 49%;
+  padding: 20px 0px;
+  border-right: 1px solid hsl(43, 100%, 47%);
+}
+
+#nice #avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+}
+
+#nice #name {
+  text-align: center;
+  padding: 10px 0px 0px 0px;
+}
+
+#nice #frontmatter-right {
+  display: inline-block;
+  width: 49%;
+  padding: 20px 0px;
+  vertical-align: top;
+}
+
+#nice #number {
+  text-align: center;
+  font-size: 32px;
+  color: hsl(43, 100%, 47%);
+  padding: 10px 0px 30px 0px;
+}
+
+#nice #word-count {
+  text-align: center;
+  padding: 10px 0px 0px 0px;
+}
+
+#nice #time-estimation {
+  text-align: center;
+  padding: 10px 0px 0px 0px;
+}
+
+#nice #end {
+  text-align: center;
+  color: #fff;
+  background: hsl(43, 100%, 47%);
+  width: 60%;
+  margin: 20px auto;
+}
+
+/* 标题 */
+
+#nice h1 {
+  font-size: 1.7em;
+  font-weight: normal;
+  border-bottom: 2px solid hsl(43, 100%, 47%);
+}
+
+#nice h1 .content {
+  background: hsl(43, 100%, 47%);
+  color: white;
+  padding: 3px 10px;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+  margin-right: 3px;
+}
+
+#nice h2 {
+  font-weight: normal;
+  color: #333;
+  font-size: 1.4em;
+  border-bottom: 1px solid hsl(43, 100%, 47%);
+}
+
+#nice h2 .content {
+  border-bottom: 1px solid hsl(43, 100%, 47%);
+}
+
+#nice h3 {
+  font-weight: normal;
+  color: #333;
+  font-size: 1.2em;
+}
+
+/* 特殊规定：
+ * h4 → 摘要
+ * h5 → 强调
+ * h6 → 序号
+ * em → 高亮
+ */
+
+#nice h4 {
+  font-weight: normal;
+  font-size: 1em;
+  width: 80%;
+  border: 1px solid hsl(43, 100%, 47%);
+  border-top: 4px solid hsl(43, 100%, 47%);
+  padding: 10px;
+  margin: 30px auto;
+  color: #333;
+}
+
+#nice h5 {
+  font-weight: normal;
+  font-size: 1.3em;
+  text-align: center;
+  background: hsl(43, 100%, 47%);
+  border: 3px double #fff;
+  width: 80%;
+  padding: 10px;
+  margin: 30px auto;
+  color: #fff;
+}
+
+#nice h6 {
+  font-size: 1.5em;
+  font-weight: normal;
+  color: hsl(43, 100%, 47%);
+  border-bottom: 1px solid hsl(43, 100%, 47%);
+}
+
+#nice em {
+  font-style: normal;
+  font-weight: normal;
+  color: white;
+  background: hsl(50, 100%, 43%);
+  padding: 2px 4px;
+	margin: 0px 2px;
+}
+
+/* 其他需要修改的内容 */
+
+#nice a {
+  color: hsl(43, 100%, 47%);
+  font-weight: normal;
+  text-decoration: underline;
+  border: none;
+}
+
+#nice a:hover {
+  color: hsl(36, 100%, 58%);
+  font-weight: normal;
+  text-decoration: underline;
+  border: none;
+}
+
+#nice hr {
+  width: 90%;
+  margin: 1.5em auto;
+  border-top: 2px dashed hsl(43, 100%, 47%);
+}
+
+#nice strong {
+  color: hsl(43, 80%, 34%);
+}
+
+#nice s,
+#nice del {
+  color: #999;
+}
+
+#nice p,
+#nice li,
+#nice li section,
+#nice h4,
+#nice table tr td {
+  color: #666;
+}
+
+#nice table tr th {
+  color: #333;
+  font-weight: normal;
+}
+
+#nice ol,
+#nice ul {
+  padding-left: 2em;
+}
+
+#nice blockquote {
+  background: #f8f8f8;
+  border-left-color: hsl(43, 100%, 47%);
+}
+
+#nice blockquote p {
+  color: #999;
+  padding: 3px 0;
+}
+
+#nice img {
+  width: 90%;
+  margin: 0 auto;
+  box-shadow: #CCC 0 10px 15px;
+}
+
+#nice p code,
+#nice li code {
+  color: hsl(43, 100%, 47%);
+}
+
+#nice sup {
+  line-height: 0;
+}
+
+#nice .footnote-word,
+#nice .footnote-ref {
+  font-weight: normal;
+  color: hsl(36, 100%, 58%);
+}
+
+#nice .footnotes-sep {
+  font-family: inherit;
+}
+
+#nice .footnote-num {
+  font-family: inherit;
+}
+
+#nice .footnote-item p {
+  color: #666;
+}
+
+#nice .footnote-item p em {
+  color: #999;
+  background: transparent;
+}
+
+/* 行间公式
+ * 最大宽度 max-width: 300% !important;
+ */
+#nice .block-equation svg {
+  color: #333;
+}
+
+#nice em .block-equation svg {
+  color: #FFF;
+}
+
+/* 行内公式
+ */
+#nice .inline-equation svg {
+  color: #333;
+}
+
+#nice .hljs {
+  border-radius: 5px;
+  padding: 1em;
+  box-shadow: #CCC 0 10px 15px;
+}
