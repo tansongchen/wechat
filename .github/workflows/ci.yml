@@ -1,0 +1,23 @@
+name: 生成 CSS 
+
+on:
+  push:
+    branches:
+      - src
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+    - run: mkdir build
+    - run: python main.py
+    - uses: JamesIves/github-pages-deploy-action@3.7.1
+      with:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        BRANCH: master
+        FOLDER: build
+        CLEAN: true
